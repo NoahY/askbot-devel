@@ -37,7 +37,7 @@
     {# avoid adding javascript here so that pages load faster #}
     </head>
     {% endspaceless %}
-    <body onload="window.print()" class="question-page">
+    <body onload="window.print()" class="question-page-print question-page">
         {% import "macros.html" as macros %}
         {% block content %}
         <h1><a href="{{ question.get_absolute_url() }}">{{ question.get_question_title() }}</a></h1>
